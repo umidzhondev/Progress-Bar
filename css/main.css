@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.progress {
+    background-color: #fff;
+    width: 80%;
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    border-radius: 10px;
+}
+
+.progress-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.progress__item {
+    border-radius: 50%;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    order: 1;
+}
+
+.order-3 {
+    order: 3
+}
+
+.order-4 {
+    order: 4
+}
+
+.order-5 {
+    order: 5
+}
+
+
+.red {
+    background-color: crimson;
+    color: #fff;
+}
+
+.blue {
+    background-color: rgb(20, 147, 220);
+    color: #fff;
+}
+
+.pink {
+    background-color: rgb(220, 20, 143);
+    color: #fff;
+}
+
+.purple {
+    background-color: rgb(140, 20, 220);
+    color: #fff;
+}
+
+.green {
+    background-color: rgb(20, 220, 113);
+    color: rgb(22, 18, 18);
+}
+
+.yellow {
+    background-color: rgb(217, 220, 20);
+    color: #222;
+}
+
+.line {
+    width: 0%;
+    height: 8px;
+    background-color: #222;
+    border-radius: 10px;
+    z-index: 1;
+    position: absolute;
+    transition: width .4s ease-in;
+    transform-origin: center;
+}
+
+.line-top {
+    bottom: 100%;
+    transform: rotate(90deg);
+    width: 0%;
+}
+
+.line-right {
+    left: 50%;
+}
+
+.line-left {
+    right: 50%;
+}
+
+.line-down {
+    top: 100%;
+    transform: rotate(90deg);
+    left: 25%;
+    width: 0%;
+}
+
+.w-50 {
+    width: 50% ;
+}
+
+.w-100 {
+    width: 100% ;
+}
+.w-0{
+    width: 0 ;
+}
+.btn-box{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    margin-top: 15px;
+}
+.btn{
+    padding: 1.2rem 3.5rem;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    transition: transform .4s ease-in
+}
+.btn:active{
+    transform: scale(.7);
+}
+.btn:nth-child(1){
+    background-color: rgb(20, 203, 220);
+}
+.btn:nth-child(2){
+    background-color: crimson;
+    color: #fff;
+}
+.active div{
+    border: 6px solid rgb(23, 27, 27);
+    border-radius: 50%;
+}
